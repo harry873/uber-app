@@ -40,6 +40,6 @@ favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
 st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
 
 
-image = Image.open('sunrise.jpg')
+image = Image.open('https://www.google.com/url?sa=i&url=https%3A%2F%2Fuol.edu.pk%2Fdiscover-uol%2Fhistory%2F&psig=AOvVaw0UPLARJZ7YFeAs8kcewXfk&ust=1685088033935000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMD_x_iBkP8CFQAAAAAdAAAAABAD')
 
 st.image(image, caption='Sunrise by the mountains')
