@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from PIL import Image
+
 st.title('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
@@ -36,3 +38,8 @@ edited_df = st.experimental_data_editor(df)
 
 favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
 st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+
+
+image = Image.open('sunrise.jpg')
+
+st.image(image, caption='Sunrise by the mountains')
